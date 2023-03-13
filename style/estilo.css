@@ -1,0 +1,139 @@
+@charset "UTF-8";
+@font-face {
+    font-family: 'HankenGrotesk';
+    src: url(../assets/fonts/HankenGrotesk-VariableFont_wght.ttf) format(truetype);
+}
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: 'HankenGrotesk';
+}
+
+div#main {
+    box-shadow: 5px 4px 20px 0px rgba(0, 0, 0, 0.342);
+    margin: auto;
+    margin-top: 50px;
+    margin-bottom: 50px;
+    width: 600px;
+    height: 450px;
+    display: flex;
+    border-radius: 30px;
+}
+
+/* Resultados */
+
+div#result {
+    background-image: linear-gradient(to bottom, #6847EF, #302CEC);
+    border-radius: 30px;
+    padding: 35px;
+    text-align: center;
+    width: 250px;
+    color: #AF9BFF;
+}
+
+div#ball {
+    background-image: linear-gradient(to top, #6847EF, #302CEC);
+    border-radius: 50%;
+    width: 100px;
+    height: 100px;
+    padding: 50px;
+    margin: auto;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    text-align: center;
+    color: white;
+    font-size: 1.5em;
+}
+
+h2 {
+    color: white;
+    margin-bottom: 15px;
+}
+
+/* Sumário */
+
+div#summary {
+    padding: 35px;
+}
+
+.values {
+    border-radius: 5px;
+    width: 200px;
+    height: 25px;
+    padding: 10px;
+    text-align: center;
+    margin-top: 30px;
+    display: flex;
+}
+
+.left {
+    text-align: left;
+    width: 140px;
+}
+
+.right {
+    text-align: right;
+    color: black; 
+    width: 60px; 
+}
+
+#red {
+    background-color: rgba(255, 0, 0, 0.259);
+    color: #FF5555;
+}
+
+#red span::before {
+    content: url(../assets/images/icon-reaction.svg);
+}
+
+#yellow {
+    background-color: rgba(255, 255, 0, 0.259);
+    color: #FFB21E;
+}
+
+#yellow span::before {
+    content: url(../assets/images/icon-memory.svg);
+}
+
+#green {
+    background-color: rgba(4, 255, 0, 0.228);
+    color: #0CBF92;
+}
+
+#green span::before {
+    content: url(../assets/images/icon-verbal.svg);
+}
+
+#blue {
+    background-color: rgba(0, 81, 255, 0.373);
+    color: #2238DB;
+}
+
+#blue span::before {
+    content: url(../assets/images/icon-visual.svg);
+}
+
+/* Continue */
+
+
+
+p#continue {
+    color: white;
+    background-color: #303B5A;
+    border-radius: 30px;
+    margin-top: 30px;
+}
+
+p a {
+    color: white;
+    text-decoration: none;
+}
+
+p a:hover {
+    background-image:linear-gradient(to bottom, #6847EF, #302CEC);
+    border-radius: 30px;
+}
